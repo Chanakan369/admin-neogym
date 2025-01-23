@@ -4,7 +4,7 @@ pipeline {
         stage("Copy file to Docker server"){
             steps {
 				//แก้ตรง team33-neogym ให้เป็นชื่อเดียวกับ pipeline job/item ที่สร้างใน jenkins
-                sh "scp -r /var/lib/jenkins/workspace/admin-neogym/* root@3.92.133.59:~/admin-neogym"
+                sh "scp -r /var/lib/jenkins/workspace/admin-neogym/* root@54.147.159.96:~/admin-neogym"
             }
         }
         
